@@ -2,14 +2,14 @@ class Payroll:
     def __init__(self,employeeId, fName, lName, hourlyRate):
         self.firstName = fName
         self.lastName = lName
-        self.employeeId = employeeId
-        self.hourlyRate = hourlyRate
+        self.employeeId = int(employeeId)
+        self.hourlyRate = float(hourlyRate)
 
     def pay(self, hoursWorked):
         if(hoursWorked <= 40):
-            return float(hoursWorked * float(self.hourlyRate))
+            return hoursWorked * self.hourlyRate
         else:
-            return float((hoursWorked * float(self.hourlyRate)) + hoursWorked - 40 * 1.5)
+            return (40 * self.hourlyRate) + ((hoursWorked - 40) * (1.5 * self.hourlyRate))
 
 
     #OPTIONAL GETTERS AND SETTERS COMMENTED OUT.

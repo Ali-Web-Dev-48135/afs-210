@@ -59,12 +59,12 @@ def returnEmployeeHoursWorked(employeeName):
 
 #STARTING POINT OF THE PROGRAM.
 def init():
-    userEmployeeId = returnEmployeeId()
+    userEmployeeId = int(returnEmployeeId())
     userFirstName = returnEmployeeFirstName()
     userLastName = returnEmployeeLastName()
-    userHourlyRate = returnEmployeeHourlyRate()
-    userHourswWorked = returnEmployeeHoursWorked(userFirstName)
+    userHourlyRate = float(returnEmployeeHourlyRate())
+    userHourswWorked = float( returnEmployeeHoursWorked(userFirstName))
     Employee = Payroll(userEmployeeId, userFirstName, userLastName, userHourlyRate)
-    print(userFirstName, "'s paycheck amount is $" ,format(Employee.pay(float(userHourswWorked)),',.2f'))
+    print(userFirstName,"'s paycheck amount is $" ,format(Employee.pay((userHourswWorked)),',.2f'))
 
 init()
