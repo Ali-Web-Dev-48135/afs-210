@@ -81,7 +81,7 @@ class DoublyLinkedList:
         
 
     def add(self, data) -> None:
-        # Append an item to the end of the list
+        # Append an item to the end of the list//
         self.addLast(data)
 
     def clear(self) -> None:
