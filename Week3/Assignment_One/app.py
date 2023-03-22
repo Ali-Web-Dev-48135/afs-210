@@ -10,7 +10,7 @@ myList.add('YOU')
 myList.add('!')
 
 print(myList)
-myList.indexOf('WITH')
+print(myList.indexOf('WITH'))
 indexOfYou = myList.indexOf('YOU')
 myList.deleteAtIndex(indexOfYou)
 myList.addAtIndex('US', indexOfYou)
