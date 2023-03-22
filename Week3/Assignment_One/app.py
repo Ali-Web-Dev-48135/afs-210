@@ -10,9 +10,10 @@ myList.add('YOU')
 myList.add('!')
 
 print(myList)
-print(myList.indexOf('WITH'))
-myList.addAtIndex('US', 4)
-myList.addAtIndex('ALL', 5)
+myList.indexOf('WITH')
+indexOfYou = myList.indexOf('YOU')
+myList.deleteAtIndex(indexOfYou)
+myList.addAtIndex('US', indexOfYou)
+indexOfExp = myList.indexOf('!')
+
 print(myList)
-
-
