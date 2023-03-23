@@ -3,9 +3,20 @@ from queue import Queue
 
 
 def isPalindrome(wordString: str) -> None:
-    wordLetters = list(reversed(wordString))
-    joinedBackWord = ''.join(wordLetters)
-    print(joinedBackWord == wordString)
+    strStack = Stack()
+    strQueue = Queue()
+
+    for letter in wordString:
+        strStack.push(letter)
+        strQueue.enqueue(letter)
+
+    for letter in wordString:
+        equalOrNot = False
+        if(strStack.pop() == strQueue.dequeue()):
+            equalOrNot = True
+        else:
+            equalOrNot = False
+    print(equalOrNot)
 
 
 isPalindrome('racecar')
