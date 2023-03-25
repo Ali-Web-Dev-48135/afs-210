@@ -44,3 +44,13 @@ class Payroll:
     # @hourlyRate.setter 
     # def hourlyRate(self, value):
     #     self.hourlyRate = value
+
+"""
+Engage In Slack Week 4
+Hashing is the process of using an algorithm to map data of any size to a fixed length.
+Hashing is used in data indexing, password storage and when comparing files.
+The most difficult topic for me up to now is the linked list concept. Now I understand what is going on behind the scenes
+when working with arryays and lists. Creating a custom linked list from scratch was more challenging.
+A useful resource was this https://www.freecodecamp.org/news/introduction-to-linked-lists-in-python/.
+With more practice I will understand fully how a linked list , stacks and queues work.
+"""
