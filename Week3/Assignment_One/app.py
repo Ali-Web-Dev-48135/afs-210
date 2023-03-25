@@ -11,8 +11,9 @@ myList.add('!')
 
 print(myList)
 print(myList.indexOf('WITH'))
-myList.addAtIndex('US', 4)
-myList.addAtIndex('ALL', 5)
+indexOfYou = myList.indexOf('YOU')
+myList.deleteAtIndex(indexOfYou)
+myList.addAtIndex('US', indexOfYou)
+indexOfExp = myList.indexOf('!')
+
 print(myList)
-
-

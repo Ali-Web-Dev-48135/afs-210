@@ -6,11 +6,8 @@ class Queue:
     def enqueue(self, element) -> None:
         self.dataholder.append(element)
     
-    def dequeue(self, element) -> object:
-        try:
-            return self.dataholder.remove(element)
-        except:
-            print("Element does not exist.") 
+    def dequeue(self):
+        return self.dataholder.pop(0) 
     
     def size(self) -> int:
         return len(self.dataholder)
@@ -19,7 +16,7 @@ class Queue:
     def isEmpty(self) -> bool:
         return len(self.dataholder) == 0 
 
-    def peek(self) -> object:
+    def peek(self):
         return self.dataholder[0]
     
     def print(self) -> None:
