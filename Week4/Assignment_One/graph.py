@@ -47,8 +47,6 @@ def breadth_first_search(graph, start, goal):
     # in case there's no path between the 2 nodes
     return "Route Not Possible"
 
-
-
 def dijsktra(graph, initial, end):
     # shortest paths is a dict of nodes
     # whose value is a tuple of (previous node, weight)
@@ -73,7 +71,7 @@ def dijsktra(graph, initial, end):
         if not next_destinations:
             return "Route Not Possible"
         # next node is the destination with the lowest weight
-        current_node = min(next_destinations, key=lambda k: next_destinations[k][1])
+        current_node = min(next_destinations, key= lambda k: next_destinations[k][1])
 
     # Work back through destinations in shortest path
     path = []
